@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+.nav {
+    padding: 10px 30px;
+    width: 100vw;
+    margin: 0;
+    color: #dae764;
+    display: flex;
+    align-items: center;
+    background-color: #18041d;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Macondo', cursive;
+    font-size: 30px;
+    
+}
+
+
+.links a {
+    margin: 0 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.links a {
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    width:20px;
+}
+
+
+.links a::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+     
+    left: 50%;
+    position: absolute;
+    background: #dae764;
+    transition: width 0.2s ease-out 0s,
+        left 0.2s ease 0s;
+    width: 0px;
+}
+
+.links a:hover:after {
+    width: 100%;
+    left: 0;
+    
+    
+}
+
+.footer {
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #18041d;
+    color: #dae764;
+    margin-top: 20px !important;
+    bottom: 0%;
+    /* margin-bottom: 0px; */
+    /* margin: 0%;
+    position: relative; */
+}

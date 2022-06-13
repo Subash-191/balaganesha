@@ -1,0 +1,29 @@
+
+
+.index::after{
+  content: "";
+  clear: both;
+  display:table;
+}
+.image {
+  float:left;
+  flex:50%;
+  padding: 5px;
+}
+
+.img {
+  height: 450px;
+  width: 691px;
+  border-radius: 8px;
+}
+
+.about{
+  margin-left: 35px;
+}
+
+.about_content{
+  padding-left: 35px;
+    /* text-align: justify; */
+  margin-left: 35px;
+}
+

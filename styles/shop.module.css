@@ -1,0 +1,17 @@
+.root{
+    text-align: center;
+    display: block;
+}
+
+.form{
+    width: 50vw;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-color: rgb(220, 226, 240);
+    box-shadow: 10px 10px 10px 5px rgba(182, 175, 175, 0.3);
+}
+
+.field{
+    margin-bottom: 20px !important;
+}

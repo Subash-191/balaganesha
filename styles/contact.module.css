@@ -1,0 +1,50 @@
+.container {
+  background-color: rgb(220, 226, 240);
+  border-radius: 5px;
+  width: 50vw;
+  margin: 50px auto;
+  margin-top: 20px;
+  padding: 40px;
+  box-shadow: 10px 10px 10px 5px rgba(243, 212, 212, 0.3);
+  
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.textarea {
+  
+  width: 95%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+}
+.btn > button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(44, 32, 207);
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  height: 35px;
+  width: 100px;
+}
+
+.button:hover {
+  background-color: rgb(62, 62, 247);
+  border: 0.5px solid black;
+}
