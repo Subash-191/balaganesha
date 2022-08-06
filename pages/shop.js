@@ -75,9 +75,9 @@ export default function Shop() {
         key: "rzp_test_JIwuFPVaCfSOEs",
         amount: price * 100,
         currency: "INR",
-        name: "BalaGanesha Trasports & Blue Metals",
+        name: "BalaGanesha Transports & Blue Metals",
         description:
-          "BalaGanesha Trasports & Blue Metals Payment" +
+          "BalaGanesha Transports & Blue Metals Payment" +
           product +
           " x " +
           unit +

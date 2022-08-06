@@ -9,12 +9,23 @@
 }
 
 .image{
-    padding: 15px;
+    padding: 45px;
+    background-color: rgb(220, 226, 240);
 }
 
 .img{
-    height: 250px;
-    border-radius: 8px;
+    height: 290px;
+    width : 350px;
+    border-radius: 40px;
+}
+
+.caption{
+    display:block;
+    text-align: center;
+    font-size: 25px ;
+    background-color: rgb(154, 188, 219);
+    border-radius: 40px;
+    font-weight: bold;
 }
 .h1{
     margin-left: 70px;

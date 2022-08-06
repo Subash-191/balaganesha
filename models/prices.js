@@ -7,7 +7,7 @@ const priceSchema = new Schema({
   },
   msand: {
     type: Number,
-    default: 3100,
+    default: 3200,
   },
   halfJally: {
     type: Number,
