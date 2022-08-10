@@ -32,7 +32,7 @@ function Admin() {
 
   const fetchDetails = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/viewOrders"
+      "https://www.balaganesha-transports.site/viewOrders"
     );
     const data = await response.json();
     console.log(data);
@@ -42,22 +42,27 @@ function Admin() {
   };
 
   const priceDetails = async () => {
-    const response1 = await fetch("http://localhost:3000/api/prices");
+    const response1 = await fetch(
+      "https://www.balaganesha-transports.site/api/prices"
+    );
     const data1 = await response1.json();
     setPrices(data1.data[0]);
     setPricesKeys(Object.keys(data1.data[0]));
   };
 
   const deliveryHandller = async (id) => {
-    const res = await fetch("http://localhost:3000/api/viewOrders", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        id: id,
-      }),
-    });
+    const res = await fetch(
+      "https://www.balaganesha-transports.site/api/viewOrders",
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          id: id,
+        }),
+      }
+    );
     const data = await res.json();
     fetchDetails();
   };
@@ -73,17 +78,20 @@ function Admin() {
   const updateHandller = async (data) => {
     console.log(newPrice, data);
     console.log(newPrice[data]);
-    const res = await fetch("http://localhost:3000/api/prices", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        id: prices["_id"],
-        amount: parseInt(newPrice[data]),
-        product: data,
-      }),
-    });
+    const res = await fetch(
+      "https://www.balaganesha-transports.site/api/prices",
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          id: prices["_id"],
+          amount: parseInt(newPrice[data]),
+          product: data,
+        }),
+      }
+    );
     priceDetails();
     setNewPrice({});
   };

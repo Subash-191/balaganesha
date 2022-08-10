@@ -43,7 +43,7 @@ export default function Shop() {
   // const units = [5, 6, 7, 8, 9, 10];
   useEffect(() => {
     (async () => {
-      const response = await fetch("http://localhost:3000/api/prices");
+      const response = await fetch("https://www.balaganesha-transports.site/api/prices");
       const data = await response.json();
       setPrices(data.data[0]);
     })();
@@ -60,15 +60,18 @@ export default function Shop() {
       email.includes("@") &&
       mobile.length <= 10
     ) {
-      const orderRes = await fetch("http://localhost:3000/api/orders", {
-        method: "POST",
-        body: JSON.stringify({
-          amount: price * 100,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const orderRes = await fetch(
+        "https://www.balaganesha-transports.site/api/orders",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            amount: price * 100,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       const data = await orderRes.json();
       console.log(data);
       var options = {
@@ -85,7 +88,7 @@ export default function Shop() {
         image: "https://example.com/your_logo",
         order_id: data.id,
         handler: function (response) {
-          fetch("http://localhost:3000/api/addorders", {
+          fetch("https://www.balaganesha-transports.site/api/addorders", {
             method: "POST",
             body: JSON.stringify({
               name: name,
@@ -196,7 +199,7 @@ export default function Shop() {
         <TextField
           label="Mobile No"
           required
-          type={"tele"}
+          type={"tel"}
           fullWidth
           className={styles.field}
           onChange={(e) => setMobile(e.target.value)}
