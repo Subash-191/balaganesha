@@ -32,7 +32,7 @@ function Admin() {
 
   const fetchDetails = async () => {
     const response = await fetch(
-      "https://www.balaganesha-transports.site/viewOrders"
+      "https://www.balaganesha-transports.site/api/viewOrders"
     );
     const data = await response.json();
     console.log(data);
